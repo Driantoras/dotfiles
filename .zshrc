@@ -4,7 +4,7 @@ autoload -U colors && colors
 # History
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.cache/zsh_history
 
 # Basic auto/tab complete
 autoload -U compinit
