@@ -32,11 +32,13 @@ alias c="clear"
 # Load zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
-# Load zsh-history-substring-search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
-
 # Load zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# Load zsh-history-substring-search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
+bindkey '^[[A' history-substring-search-up # arrow up
+bindkey '^[[B' history-substring-search-down # arrow down
 
 # Starship prompt
 eval "$(starship init zsh)"
