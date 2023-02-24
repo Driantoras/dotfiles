@@ -1,3 +1,6 @@
+# variables
+ZSH_PLUGINS_PATH=/usr/share/zsh/plugins
+
 # enable colors
 autoload -U colors && colors
 
@@ -32,13 +35,13 @@ alias code="codium"
 alias grep="grep --color"
 
 # autosuggestions based on histroy
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source $ZSH_PLUGINS_PATH/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 # syntax highlighting in the shell
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source $ZSH_PLUGINS_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # history substring search with up and down key
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
+source $ZSH_PLUGINS_PATH/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
 bindkey '^[[A' history-substring-search-up # arrow up
 bindkey '^[[B' history-substring-search-down # arrow down
 
