@@ -1,6 +1,9 @@
 # variables
 ZSH_PLUGINS_PATH=/usr/share/zsh/plugins
 
+# paths
+export PATH=~/.cargo/bin:$PATH
+
 # enable colors
 autoload -U colors && colors
 
