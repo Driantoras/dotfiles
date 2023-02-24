@@ -29,6 +29,7 @@ bindkey -s '^o' 'lfcd\n'
 # aliases
 alias c="clear"
 alias code="codium"
+alias grep="grep --color"
 
 # autosuggestions based on histroy
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
