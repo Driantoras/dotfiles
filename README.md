@@ -1,8 +1,23 @@
 # Dotfiles
 
-uses GNU Stow to manage the symlinks
+This repo contains the dotfiles for my system
 
-## Update links
+## Installation
+
+Requirements:
+- git
+- stow
+
+Clone this repo:
+```
+git clone git@github.com:Driantoras/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
+```
+
+Note: this project must live in the home folder for stow to work properly
+
+Use stow to create the symlinks:
+
 ```
 stow .
 ```
